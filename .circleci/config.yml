@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  run_tests:
+  run_testsp:
     docker:
       - image: circleci/python:3.7.4
     steps:
@@ -21,5 +21,5 @@ jobs:
 workflows:
   build_test:
     jobs:
-      - run_tests
+      - run_testsp
       
